@@ -1,4 +1,4 @@
-# mi_card_flutter
+# wmsu_care_flutter
 
 A new Flutter project.
 
