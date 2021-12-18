@@ -26,19 +26,30 @@ class Choose extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => QuizPage(),
+                    builder: (context) => Quizzler(),
                   ),
                 );
               },
               colour: kInactiveCardColor,
-              cardChild: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Text(
-                    'GAD-7',
-                    style: kLabelTextStyle,
-                  ),
-                ],
+              cardChild: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Text(
+                      'GAD-7 Anxiety Severity',
+                      style: kResultTextStyle,
+                    ),
+                    Text(
+                      '\nThe Generalised Anxiety Disorder Assessment (GAD-7) is a seven-item instrument that is used to measure or assess the severity of generalised anxiety disorder (GAD)',
+                      style: kBodyTextStyle2, //kLabelTextStyle,
+                      maxLines: 13,
+                      softWrap: true,
+                      overflow: TextOverflow.fade,
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
@@ -46,14 +57,25 @@ class Choose extends StatelessWidget {
             child: ReusableCard(
               onPress: () {},
               colour: kInactiveCardColor,
-              cardChild: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Text(
-                    'PHQ-9',
-                    style: kLabelTextStyle,
-                  ),
-                ],
+              cardChild: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Text(
+                      'PHQ-9 Depression Severity',
+                      style: kResultTextStyle,
+                    ),
+                    Text(
+                      '\nThe PHQ-9 is the nine item depression scale of the patient health questionnaire.',
+                      style: kBodyTextStyle2, //kLabelTextStyle,
+                      maxLines: 13,
+                      softWrap: true,
+                      overflow: TextOverflow.fade,
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
@@ -68,5 +90,3 @@ class Choose extends StatelessWidget {
     );
   }
 }
-
-

@@ -70,7 +70,7 @@ class _QuizPageState extends State<QuizPage> {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: <Widget>[
         Expanded(
-          flex: 5,
+          flex: 3,
           child: Padding(
             padding: EdgeInsets.all(10.0),
             child: Center(
@@ -177,7 +177,7 @@ class _QuizPageState extends State<QuizPage> {
                           quizBrain.isFinish();
                           count = 0;
                           //main();
-                          //Navigator.pop(context);
+                          Navigator.pop(context);
                           CalculatorResult? calc =
                           CalculatorResult(count: total);
                           total = 0;
@@ -236,7 +236,7 @@ class _QuizPageState extends State<QuizPage> {
                           quizBrain.isFinish();
                           count = 0;
                           //main();
-                          //Navigator.pop(context);
+                          Navigator.pop(context);
                           CalculatorResult? calc =
                           CalculatorResult(count: total);
                           total = 0;
@@ -295,7 +295,7 @@ class _QuizPageState extends State<QuizPage> {
                           quizBrain.isFinish();
                           count = 0;
                           //main();
-                          //Navigator.pop(context);
+                          Navigator.pop(context);
                           CalculatorResult? calc =
                           CalculatorResult(count: total);
                           total = 0;

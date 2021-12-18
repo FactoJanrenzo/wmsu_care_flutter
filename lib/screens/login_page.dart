@@ -55,7 +55,7 @@ class LoginPage extends StatelessWidget {
                     color: Colors.teal,
                   ),
                   title: Text(
-                    'studentmail@wmsu.edu.ph',
+                    'Juan Dela Cruz',
                     style: TextStyle(
                       color: Colors.teal.shade900,
                       fontFamily: 'Source Sans Pro',
@@ -75,7 +75,7 @@ class LoginPage extends StatelessWidget {
                     color: Colors.teal,
                   ),
                   title: Text(
-                    '*********',
+                    'BS Computer Science',
                     style: TextStyle(
                       color: Colors.teal.shade900,
                       fontFamily: 'Source Sans Pro',
@@ -84,6 +84,26 @@ class LoginPage extends StatelessWidget {
                   ),
                 ),
               ),
+
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.lock,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    '4th Year',
+                    style: TextStyle(
+                      color: Colors.teal.shade900,
+                      fontFamily: 'Source Sans Pro',
+                      fontSize: 20.0,
+                    ),
+                  ),
+                ),
+              ),
+
               BottomButton(
                 buttonTitle: 'Login',
                 onTap: () {
