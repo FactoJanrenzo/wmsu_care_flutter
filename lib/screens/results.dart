@@ -5,8 +5,10 @@ import 'package:mi_card_flutter/components/bottom_button.dart';
 import 'package:mi_card_flutter/screens/choose.dart';
 
 class ResultsPage extends StatelessWidget {
-
-  ResultsPage({required this.interpretation, required this.scoreResult, required this.resultText});
+  ResultsPage(
+      {required this.interpretation,
+      required this.scoreResult,
+      required this.resultText});
 
   final String scoreResult;
   final String resultText;
@@ -37,24 +39,31 @@ class ResultsPage extends StatelessWidget {
             child: ReusableCard(
               colour: kActiveCardColor,
               onPress: () {},
-              cardChild: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: <Widget>[
-                  Text(
-                    resultText.toUpperCase(),
-                    style: kResultTextStyle,
-                  ),
-                  Text(
-                    scoreResult,
-                    style: kBMITextStyle,
-                  ),
-                  Text(
-                    interpretation,
-                    textAlign: TextAlign.end,
-                    style: kBodyTextStyle,
-                  ),
-                ],
+              cardChild: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  //crossAxisAlignment: CrossAxisAlignment.center,
+                  children: <Widget>[
+                    Text(
+                      resultText.toUpperCase(),
+                      style: kResultTextStyle,
+                    ),
+                    Text(
+                      scoreResult,
+                      style: kBMITextStyle,
+                    ),
+                    Text(
+                      interpretation,
+                      //textAlign: TextAlign.end,
+                      style: kBodyTextStyle,
+                      maxLines: 13,
+                      softWrap: true,
+                      overflow: TextOverflow.fade,
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
+                ),
               ),
             ),
           ),

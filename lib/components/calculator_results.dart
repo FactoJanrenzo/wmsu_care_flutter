@@ -14,13 +14,13 @@ class CalculatorResult {
 
   String getResult() {
     if(_result <= 4) {
-      return 'Anxiety Severity: None-minimal';
+      return 'Anxiety Severity:\nNone-minimal';
     } else if(_result >= 5 && _result <= 9) {
-      return 'Anxiety Severity: Mild';
+      return 'Anxiety Severity:\nMild';
     } else if(_result >= 9 && _result <= 14) {
-      return 'Anxiety Severity: Moderate Severe';
+      return 'Anxiety Severity:\nModerate Severe';
     } else if(_result >= 15 && _result <= 19) {
-      return 'Anxiety Severity: Moderate';
+      return 'Anxiety Severity:\nModerate';
     }
     else {
       return 'Anxiety Severity: Severe';
