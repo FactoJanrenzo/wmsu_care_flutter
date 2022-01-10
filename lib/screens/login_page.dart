@@ -4,6 +4,9 @@ import 'package:mi_card_flutter/screens/choose.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
+
+  static const String id = 'login_screen';
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -107,12 +110,13 @@ class LoginPage extends StatelessWidget {
               BottomButton(
                 buttonTitle: 'Login',
                 onTap: () {
-                  Navigator.push(
+                  /* Navigator.push(
                     context,
                     MaterialPageRoute(
                       builder: (context) => Choose(),
                     ),
-                  );
+                  );*/
+                  Navigator.pushNamed(context, Choose.id);
                 },
               ),
             ],

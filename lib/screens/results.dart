@@ -5,6 +5,8 @@ import 'package:mi_card_flutter/components/bottom_button.dart';
 import 'package:mi_card_flutter/screens/choose.dart';
 
 class ResultsPage extends StatelessWidget {
+  static const String id = 'results';
+
   ResultsPage(
       {required this.interpretation,
       required this.scoreResult,
@@ -70,7 +72,8 @@ class ResultsPage extends StatelessWidget {
           BottomButton(
             onTap: () {
               Navigator.pop(context);
-              Choose();
+              Navigator.pop(context);
+              Navigator.pushNamed(context, Choose.id);
             },
             buttonTitle: 'Go to Menu',
           ),

@@ -1,5 +1,6 @@
 
 class CalculatorResult {
+  static const String id = 'CalculatorResult';
 
   CalculatorResult({required this.count});
 

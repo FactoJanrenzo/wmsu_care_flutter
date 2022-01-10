@@ -10,6 +10,8 @@ Gad7 quizBrain = Gad7();
 void main() => runApp(Quizzler());
 
 class Quizzler extends StatelessWidget {
+  static const String id = 'quizzler';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,7 +26,6 @@ class Quizzler extends StatelessWidget {
           ),
         ),
       );
-
   }
 }
 

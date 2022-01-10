@@ -10,6 +10,8 @@ Gad7 quizBrain = Gad7();
 void main() => runApp(Choose());
 
 class Choose extends StatelessWidget {
+  static const String id = 'choose';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,12 +25,13 @@ class Choose extends StatelessWidget {
           Expanded(
             child: ReusableCard(
               onPress: () {
-                Navigator.push(
+                /*Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => Quizzler(),
                   ),
-                );
+                );*/
+                Navigator.pushNamed(context, Quizzler.id);
               },
               colour: kInactiveCardColor,
               cardChild: Padding(
